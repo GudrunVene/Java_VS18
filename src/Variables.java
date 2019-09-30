@@ -1,9 +1,9 @@
 public class Variables {
     public static void main(String[] args) {
 
-        int chickens = 3;
-        double bacon = 5.5;
-        String tractor = "There is none!";
+        int chickens = 9000;
+        double bacon = 0.1;
+        String tractor = "Zetor";
       
         System.out.println("Chickens:");
         System.out.println(chickens);
