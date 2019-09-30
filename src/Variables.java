@@ -4,7 +4,7 @@ public class Variables {
         int chickens = 9000;
         double bacon = 0.1;
         String tractor = "Zetor";
-      
+
         System.out.println("Chickens:");
         System.out.println(chickens);
         System.out.println("Bacon (kg):");
