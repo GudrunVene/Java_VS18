@@ -16,11 +16,11 @@ public class Temperatures {
 
 
         while (true) {
-            System.out.print("Type a floating point number: ");
+            System.out.println("Type a floating point number: ");
             float number = reader.nextFloat();
             System.out.println();
             if (number < -30 || number > 40) {
-                break;
+                System.out.println("Not appropriate for temperatuses.");
             }else {
                 Graph.addNumber(number);
             }
