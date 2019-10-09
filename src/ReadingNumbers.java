@@ -8,11 +8,14 @@ public class ReadingNumbers {
 
         System.out.print("Type a number: ");
         int number = reader.nextInt();
+        int sum = 0;
 
         while (number != -1){
+            sum = sum + number;
             System.out.println(number);
             number = reader.nextInt();
         }
         System.out.println("Thank you and see you later!");
+        System.out.println("The sum is " + sum);
     }
 }
