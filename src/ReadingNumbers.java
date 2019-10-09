@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class ReadingNumbers {
 
     public static void main(String [] args){
@@ -10,6 +11,7 @@ public class ReadingNumbers {
         int number = reader.nextInt();
         int sum = 0;
         int i = 0;
+        double average = 0;
 
         while (number != -1){
             sum = sum + number;
@@ -17,8 +19,12 @@ public class ReadingNumbers {
             number = reader.nextInt();
             i ++;
         }
+        double sumDouble = sum;
+        double iDouble = i;
+        average = sumDouble / iDouble;
         System.out.println("Thank you and see you later!");
         System.out.println("The sum is " + sum);
         System.out.println("How many numbers: " + i);
+        System.out.println("Average: " + average);
     }
 }
