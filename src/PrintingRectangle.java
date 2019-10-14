@@ -12,12 +12,12 @@ public class PrintingRectangle {
 
     }
 
-    private static void  printRectangle(int amount, int  row) {
+    private static void  printRectangle(int width, int  height) {
 
-        
+
         int i = 0;
-        while (i < row) {
-            printRow(amount);
+        while (i < height) {
+            printRow(width);
             i ++;
         }
 
