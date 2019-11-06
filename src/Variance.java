@@ -5,7 +5,6 @@ public class Variance {
 
     public static double variance(ArrayList<Integer> list) {
 
-
         double avg = average(list);
         //  ((3 - 3.5)² + (2 - 3.5)² + (7 - 3.5)² + (2 - 3.5)²)/(4 - 1) ? 5,666667
         double sum = 0;
