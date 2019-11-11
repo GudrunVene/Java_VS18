@@ -13,5 +13,5 @@ public class Product {
     public void printProduct(){
         System.out.println(this.name + ",  price, " + this.price + " amount, " + this.amount);
     }
-    
+
 }
