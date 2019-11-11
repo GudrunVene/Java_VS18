@@ -22,14 +22,22 @@ public class Menu {
 
     public void printMeals(){
         this.meals.size();
-
         int i = 0;
-        while ( i < this.meals.size() ){
-            this.meals.get(i);
-            System.out.println(this.meals.get(i));
-            i++;
-        }
 
+        if (this.meals.isEmpty()){
+            System.out.println("empty");
+        } else {
+            while ( i < this.meals.size() ){
+                this.meals.get(i);
+                System.out.println(this.meals.get(i));
+                i++;
+            }
+        }
+    }
+
+    public void clearMenu(){
+
+        this.meals.clear();
     }
 
 }

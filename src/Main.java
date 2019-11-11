@@ -8,6 +8,8 @@ public class Main {
         food.addMeal("Sauerkraut");
 
         food.printMeals();
+        food.clearMenu();
+        food.printMeals();
 
     }
 }
