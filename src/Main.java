@@ -5,10 +5,10 @@ public class Main {
         DecreasingCounter counter = new DecreasingCounter(10);
         counter.printValue();
 
-        counter.decrease(9);
+        counter.decrease();
         counter.printValue();
 
-        counter.decrease(8);
+        counter.decrease();
         counter.printValue();
     }
 }

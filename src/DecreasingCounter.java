@@ -10,10 +10,9 @@ public class DecreasingCounter {
         System.out.println("value: " + this.value);
     }
 
-    public void decrease(int valueAtStart) {
+    public void decrease() {
         // write here the code that decrements the value of counter by one
-        this.value = valueAtStart;
-        int decreased = valueAtStart --;
+        int decreased = this.value --;
         return;
     }
 
