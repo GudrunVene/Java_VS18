@@ -17,5 +17,17 @@ public class Accounts {
         System.out.println("Final state");
         System.out.println(bartosAccount);
         System.out.println(bartosSwissAccount);
+
+        newAccount("Gudrun");
+    }
+
+    public static void newAccount(String owner) {
+
+        Account ownerAccount = new Account(owner, 100 );
+        System.out.println("Initial state");
+        System.out.println(ownerAccount);
+        ownerAccount.deposit(20);
+        System.out.println("Final state");
+        System.out.println(ownerAccount);
     }
 }
