@@ -1,10 +1,13 @@
 public class LyyraCard {
 
     private double balance;
+    private String owner;
 
-    public LyyraCard(double balanceAtStart) {
+
+    public LyyraCard(String owner, double balanceAtStart) {
         // write code here
         this.balance = balanceAtStart;
+        this.owner = owner;
     }
 
     public String toString() {
