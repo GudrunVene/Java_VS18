@@ -2,20 +2,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        DecreasingCounter counter = new DecreasingCounter(100);
+        Menu food = new Menu("Hamburger");
 
-        counter.printValue();
+        food.addMeal("Fish'n'Chips");
+        food.addMeal("Sauerkraut");
 
-        counter.decrease();
-        counter.printValue();
+        food.printMeals();
 
-        counter.decrease();
-        counter.printValue();
-
-        counter.reset();
-        counter.printValue();
-
-        counter.setInitial();
-        counter.printValue();
     }
 }
