@@ -12,7 +12,10 @@ public class DecreasingCounter {
 
     public void decrease() {
         // write here the code that decrements the value of counter by one
-        int decreased = this.value --;
+        if (this.value > 0){
+            int decreased = this.value --;
+        } else
+
         return;
     }
 
