@@ -9,7 +9,6 @@ public class IsNumberMoreThanOnce {
                return true;
             }
            else
-
         return false;
     }
 
