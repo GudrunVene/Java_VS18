@@ -29,13 +29,16 @@ public class LyyraCard {
 
     public void loadMoney(double amount) {
         // write code here
-        if ( this.balance + amount < 150 ){
-            this.balance = this.balance + amount;
-        } else {
-            this.balance = ( this.balance + amount - 150);
-            System.out.println("money needed to return " + this.balance);
-            this.balance = 150;
+        if (amount > 0){
+            if ( this.balance + amount < 150 ){
+                this.balance = this.balance + amount;
+            } else {
+                this.balance = ( this.balance + amount - 150);
+                System.out.println("money needed to return " + this.balance);
+                this.balance = 150;
+            }
         }
+
 
     }
 }
