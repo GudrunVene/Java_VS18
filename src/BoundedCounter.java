@@ -3,7 +3,6 @@ public class BoundedCounter {
     private int value = 0;
     private int upperLimit;
 
-
     public BoundedCounter (int upperLimit) {
         this.upperLimit = upperLimit;
     }
@@ -24,5 +23,9 @@ public class BoundedCounter {
         } else return "" + this.value;
     }
 
+
+    public int getValue() {
+        return this.value;
+    }
 
 }
