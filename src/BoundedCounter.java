@@ -13,10 +13,15 @@ public class BoundedCounter {
         if (this.value > upperLimit) {
             this.value = 0;
         }
+
     }
 
     public String toString() {
-        return "" + this.value;
+
+        if (this.value < 10) {
+
+            return "0" + this.value;
+        } else return "" + this.value;
     }
 
 
