@@ -3,13 +3,12 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Dice dice = new Dice(6);
+        PasswordRandomizer randomizer = new PasswordRandomizer(13);
+        System.out.println("Password: " + randomizer.createPassword());
+        System.out.println("Password: " + randomizer.createPassword());
+        System.out.println("Password: " + randomizer.createPassword());
+        System.out.println("Password: " + randomizer.createPassword());
 
-        int i = 0;
-        while ( i < 10 ) {
-            System.out.println( dice.roll() );
-            i++;
-        }
 
     }
 }
