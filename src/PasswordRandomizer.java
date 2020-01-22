@@ -6,7 +6,7 @@ public class PasswordRandomizer {
 
     private Random random;
     private int length;
-    ArrayList<String> pass = new ArrayList<>();
+
 
     public PasswordRandomizer(int length) {
         // Format the variable here
@@ -17,18 +17,19 @@ public class PasswordRandomizer {
     public String createPassword() {
         // Write the code here which returns the new password
 
-        
-        while (length > 0){
+        int i = 0;
+        ArrayList<String> pass = new ArrayList<>();
+        while (i <= length){
             int number = random.nextInt(26);
             char symbol = "abcdefghijklmnopqrstuvwxyz".charAt(number);
             String s = String.valueOf(symbol);
 
             pass.add(s);
-            length--;
+            i++;
         }
         String joinedString = pass.stream().collect(Collectors.joining());
-        System.out.println("joined " + joinedString);
         return joinedString;
+
 
 
     }
